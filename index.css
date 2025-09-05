@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap");
+
+@theme {
+  --font-family-bellefair: "Bellefair", serif;
+  /* Set Barlow as the default sans-serif font for the project */
+  --font-family-sans: "Barlow", sans-serif;
+  --font-family-barlow: "Barlow", sans-serif;
+  --font-family-barlow-condensed: "Barlow Condensed", sans-serif;
+
+  --color-dark-blue: hsl(230, 35%, 7%);
+  --color-light-blue: hsl(231, 77%, 90%);
+  --color-white: hsl(0, 0%, 100%);
+
+  --background-image-home-desktop: url("/assets/home/background-home-desktop.jpg");
+  --background-image-home-tablet: url("/assets/home/background-home-tablet.jpg");
+  --background-image-home-mobile: url("/assets/home/background-home-mobile.jpg");
+
+  --background-image-destination-desktop: url("/assets/destination/background-destination-desktop.jpg");
+  --background-image-destination-tablet: url("/assets/destination/background-destination-tablet.jpg");
+  --background-image-destination-mobile: url("/assets/destination/background-destination-mobile.jpg");
+
+  --background-image-crew-desktop: url("/assets/crew/background-crew-desktop.jpg");
+  --background-image-crew-tablet: url("/assets/crew/background-crew-tablet.jpg");
+  --background-image-crew-mobile: url("/assets/crew/background-crew-mobile.jpg");
+
+  --background-image-technology-desktop: url("/assets/technology/background-technology-desktop.jpg");
+  --background-image-technology-tablet: url("/assets/technology/background-technology-tablet.jpg");
+  --background-image-technology-mobile: url("/assets/technology/background-technology-mobile.jpg");
+}
+
+@import "tailwindcss";
+
+@layer utilities {
+  .bg-page-home {
+    background-image: var(--background-image-home-mobile);
+    @media (min-width: 768px) {
+      background-image: var(--background-image-home-tablet);
+    }
+    @media (min-width: 1024px) {
+      background-image: var(--background-image-home-desktop);
+    }
+  }
+
+  .bg-page-destination {
+    background-image: var(--background-image-destination-mobile);
+    @media (min-width: 768px) {
+      background-image: var(--background-image-destination-tablet);
+    }
+    @media (min-width: 1024px) {
+      background-image: var(--background-image-destination-desktop);
+    }
+  }
+
+  .bg-page-crew {
+    background-image: var(--background-image-crew-mobile);
+    @media (min-width: 768px) {
+      background-image: var(--background-image-crew-tablet);
+    }
+    @media (min-width: 1024px) {
+      background-image: var(--background-image-crew-desktop);
+    }
+  }
+
+  .bg-page-technology {
+    background-image: var(--background-image-technology-mobile);
+    @media (min-width: 768px) {
+      background-image: var(--background-image-technology-tablet);
+    }
+    @media (min-width: 1024px) {
+      background-image: var(--background-image-technology-desktop);
+    }
+  }
+}
