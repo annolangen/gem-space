@@ -16,8 +16,8 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: Add solution URL here
-- Live Site URL: Add live site URL here
+- Solution URL: https://github.com/annolangen/gem-space
+- Live Site URL: https://annolangen.github.io/gem-space/index.html
 
 ## My process
 
